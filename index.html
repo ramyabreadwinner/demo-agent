@@ -1,5 +1,30 @@
 <html>
   <body>
     Test Github Page
+
+    <script type="text/javascript">
+      function initEmbeddedMessaging() {
+        try {
+          embeddedservice_bootstrap.settings.language = "en_US"; // For example, enter 'en' or 'en-US'
+
+          embeddedservice_bootstrap.init(
+            "00DdM00000J4kKf",
+            "Test_BW_Deployment",
+            "https://orgfarm-368cb0b8f0-dev-ed.develop.my.site.com/ESWTestBWDeployment1738596692580",
+            {
+              scrt2URL:
+                "https://orgfarm-368cb0b8f0-dev-ed.develop.my.salesforce-scrt.com",
+            }
+          );
+        } catch (err) {
+          console.error("Error loading Embedded Messaging: ", err);
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://orgfarm-368cb0b8f0-dev-ed.develop.my.site.com/ESWTestBWDeployment1738596692580/assets/js/bootstrap.min.js"
+      onload="initEmbeddedMessaging()"
+    ></script>
   </body>
 </html>
